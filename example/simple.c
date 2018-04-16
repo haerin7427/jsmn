@@ -26,12 +26,25 @@ int main() {
 	jsmn_parser p;
 	jsmntok_t t[128]; /* We expect no more than 128 tokens */
 
+#ifdef DEBUG_MODE
+        printf("\n<JSON_STRING>\n");
+        printf("%s",JSON_STRING);
+        printf("\n=============\n");
+#endif
+
 	jsmn_init(&p);
 	r = jsmn_parse(&p, JSON_STRING, strlen(JSON_STRING), t, sizeof(t)/sizeof(t[0]));
 	if (r < 0) {
 		printf("Failed to parse JSON: %d\n", r);
 		return 1;
 	}
+
+#ifdef DEBUG_MODE
+        for ( i=1; i < r; i++){
+        printf("[%2d] (%d) %d~%d, size:%d\n", i, t[i].type, t[i].start, t[i].end, t[i].size);
+        }
+#endif
+
 
 	/* Assume the top-level element is an object */
 	if (r < 1 || t[0].type != JSMN_OBJECT) {
@@ -74,3 +87,4 @@ int main() {
 	}
 	return EXIT_SUCCESS;
 }
+
