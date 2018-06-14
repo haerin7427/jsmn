@@ -1,0 +1,34 @@
+{
+"cars" : [
+		{
+		"model" : "Sonata",
+		"maker" : "Hyundai",
+		"year" : 2016,
+		"gas" : "gasoline"
+		},
+		{
+		"model" : "SM5",
+		"maker" : "Samsung",
+		"year" : 2018,
+		"gas" : "gasoline"
+		},
+		{
+		"model" : "Cube",
+		"maker" : "Hyundai",
+		"year" : 2014,
+		"gas" : "diesel"
+		},
+		{
+		"model" : "gogosing",
+		"maker" : "Hyundai",
+		"year" : 2017,
+		"gas" : "lpg"
+		},
+		{
+		"model" : "runcar",
+		"maker" : "Samsung",
+		"year" : 2012,
+		"gas" : "gasoline"
+		}
+         ]
+}
