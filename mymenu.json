@@ -1,0 +1,44 @@
+{
+ "rice":
+ [
+ {
+	"name":"Short rib soup",
+	"size":"one person",
+	"price":7000
+ },
+ {
+	"name":"Seolleongtang",
+	"size":"one person",
+	"price":7000
+ },
+ {
+	"name":"hot spicy meat stew",
+	"size":"one person",
+	"price":7000
+ },
+ ],
+ "noodle":
+ [
+ {
+	"name":"MultI-cold noodles",
+	"size":"one person",
+	"price":6000
+ },
+ {
+	"name":"Bibim naengmyeon",
+	"size":"one person",
+	"price":7000
+ },
+ {
+	"name":"Kongguk noodles",
+	"size":"one person",
+	"price":6000
+ },
+ {
+	"name":"Cold udon",
+	"size":"one person",
+	"price":6000
+ },
+ ]
+}
+
