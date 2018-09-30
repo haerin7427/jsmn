@@ -87,4 +87,4 @@ int main() {
 	}
 	return EXIT_SUCCESS;
 }
-
+//study_atom
